@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DOM: Creando Elementos y Fragmentos</title>
+    <style>
+        :root {
+          --yellow-color: #F7DF1E;
+          --dark-color: #222;
+        }
+    
+        .cards {
+          border: thin solid var(--dark-color);
+          padding: 1rem;
+        }
+    
+        .card {
+          display: inline-block;
+          background-color: var(--dark-color);
+          color: var(--yellow-color);
+        }
+    
+        .card figcaption {
+          padding: 1rem;
+        }
+    
+        .rotate-45 {
+          transform: rotate(45deg);
+        }
+    
+        .rotate-135 {
+          transform: rotate(135deg);
+        }
+    
+        .opacity-80 {
+          opacity: .8;
+        }
+    
+        .sepia {
+          filter: sepia(1);
+        }
+    
+        .eventos-flujo div {
+          padding: 4rem;
+          font-size: 2rem;
+          text-align: center;
+        }
+    
+        .uno {
+          background-color: yellow;
+        }
+    
+        .dos {
+          background-color: gold;
+        }
+    
+        .tres {
+          background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1> DOM: Creando Elementos y Fragmentos</h1>
+    <section class="cards">
+        <figure class="card">
+          <img src="https://picsum.photos/id/12/200/300" alt="Tech">
+          <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/237/200/300" alt="Animals">
+          <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="Architecture">
+          <figcaption>Architecture</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/2/200/300" alt="People">
+          <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+          <img src="https://picsum.photos/id/7/200/300" alt="Nature">
+          <figcaption>Nature</figcaption>
+        </figure>
+      </section>
+      <script src="dom.js"></script>
+</body>
+</html>
